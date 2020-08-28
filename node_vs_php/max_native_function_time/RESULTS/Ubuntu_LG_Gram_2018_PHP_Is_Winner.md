@@ -1,4 +1,4 @@
-# Results
+# Result in Ubuntu from LG Gram 2018
 
 ## Author
 
@@ -14,7 +14,7 @@ Stackoverflow: https://stackoverflow.com/users/6083799/danilocgsilva
 
 Meetup: https://www.meetup.com/pt-BR/members/143824372/
 
-## System tested:
+## System tested
 
 * Processor: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
 * Disk manufacturer/model: LITEON CV8-8E256
@@ -139,7 +139,7 @@ PHP took an averange of 12 milliseconds while node took an averange of 32 millis
 
 ```json
 {
-    "description": "Test propposed by https://github.com/danilocgsilva/a_vs_n/blob/master/node_vs_php/max_native_function_time/README.md. \nThe test consists in testing the native max method of each tested language, that includes php and node.. I give three numbers: 12, 16 and 72, and the method returns the higher between then. The intent is to test the performance in each language for each language.",
+    "description": "Test propposed by https://github.com/danilocgsilva/a_vs_n/blob/master/node_vs_php/max_native_function_time/README.md. \nThe test consists in testing the native max method of each tested language, that includes php and node. I give three numbers: 12, 16 and 72, and the method returns the higher between then. The intent is to test the performance in each language for each language.",
     "author": {
         "name": "Danilo Carlos de Góes Silva",
         "email": "contact@danilocgsilva@gmail.com",
