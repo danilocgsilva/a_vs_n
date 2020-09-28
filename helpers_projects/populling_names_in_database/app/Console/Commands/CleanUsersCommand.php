@@ -3,22 +3,23 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Models\User;
 
-class FetchCommand extends Command
+class CleanUsersCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'fetch';
+    protected $signature = 'clean';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Clear the data from the database users table';
 
     /**
      * Create a new command instance.
@@ -37,6 +38,7 @@ class FetchCommand extends Command
      */
     public function handle()
     {
-        print("Fetch");
+        User::truncate();
+        print("The users table has been cleaned.\n");
     }
 }
