@@ -23,6 +23,8 @@ class PopuleCommand extends Command
      */
     protected $description = 'Command description';
 
+    public $fp;
+
     /**
      * Create a new command instance.
      *
@@ -31,6 +33,8 @@ class PopuleCommand extends Command
     public function __construct()
     {
         parent::__construct();
+
+        
     }
 
     /**
@@ -63,21 +67,45 @@ class PopuleCommand extends Command
 
     private function popule(int $howMuch) : void
     {
+        $this->fp = fopen(
+            "populling-output-" . (new DateTime())->format('Ymd-H\hi\ms\s.u') . ".txt", 
+            "w"
+        );
+        
+        $this->output(
+            "Will try to fill the database with " . $howMuch . " users."
+        );
+        
+        config(['popule.count' => $howMuch]);
+        
+        $startDateTime = new DateTime();
+        $this->output(
+            "Starting filling at " . $this->formatDateTime($startDateTime) . "."
+        );
+        $this->output(
+            "Filling..."
+        );
+        
+        Artisan::call('db:seed');
+        
+        $endDateTime = new DateTime();
 
-        print(
-            "Will try to fill the database with " . $howMuch . " users.\n"
+        $this->output(
+            "Finished at " . $this->formatDateTime($endDateTime) . "."
         );
 
-        config(['popule.count' => $howMuch]);
+        $this->output(
+            "It tooks " . $this->amountTimeInString($startDateTime, $endDateTime) . " to complete."
+        );
 
-        $startDateTime = new DateTime();
-        print("Starting filling at " . $this->formatDateTime($startDateTime) . ".\nFilling...\n");
+        fclose($this->fp);
+    }
 
-        Artisan::call('db:seed');
-
-        $endDateTime = new DateTime();
-        print("Finished at " . $this->formatDateTime($endDateTime) . ".\n");
-        print("It tooks " . $this->amountTimeInString($startDateTime, $endDateTime) . " to complete.\n");
+    private function output(string $string) : void
+    {
+        $stringWithNewLine = $string . "\n";
+        print($stringWithNewLine);
+        fwrite($this->fp, $stringWithNewLine);
     }
 
     private function formatDateTime(DateTime $dateTime) : string
