@@ -27,3 +27,5 @@ To fill the databas with 1000 names:
 To clean the users table (new tests can be performed only when the users table are empty):
 
 `php artisan clean`
+
+As the test can take much time, can be a problema to track everything that happens in the terminal. So, each time that you populate the database, the software writes in the root diretory a file that registers the time for database populatting. It is called *populling-output-HASH*, beign the hash a code that tells the exact moment of file creation.
