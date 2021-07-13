@@ -5,4 +5,4 @@ Compares performance from different technologies for same operations and registe
 ## File/folders list
 
 * `helpers_projects`: Projects that shoud be used indirectly by tests.
-* `tests`: where comparisions are proposed and documented
+* `tests`: The main folder, containing the documentation of results and procedures taken.

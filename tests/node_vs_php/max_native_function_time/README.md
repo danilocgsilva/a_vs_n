@@ -47,3 +47,8 @@ time node max.js
 ## Care taken to set the tests valid:
 
 * Tests both with node and php should be performed with not much time between then and with exact same system.
+
+## Results from tests made
+
+* [LG Gram 2018 in Ubuntu](RESULTS/Ubuntu_LG_Gram_2018_PHP_Is_Winner.md)
+* [LG Gram 2018 in Windows](RESULTS/Win10_LG_Gram_2018_Node_Is_Winner.md)
