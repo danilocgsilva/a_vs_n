@@ -50,5 +50,6 @@ time node max.js
 
 ## Results from tests made
 
-* [LG Gram 2018 in Ubuntu](RESULTS/Ubuntu_LG_Gram_2018_PHP_Is_Winner.md)
-* [LG Gram 2018 in Windows](RESULTS/Win10_LG_Gram_2018_Node_Is_Winner.md)
+* [LG Gram 2018 in Ubuntu](RESULTS/Ubuntu_LG_Gram_2018.md)
+* [LG Gram 2018 in Windows](RESULTS/Win10_LG_Gram_2018.md)
+* [Dell Latitude 3400](RESULTS/Ubuntu_Dell_Latitude_3400)
