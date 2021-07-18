@@ -52,4 +52,5 @@ time node max.js
 
 * [LG Gram 2018 in Ubuntu](RESULTS/Ubuntu_LG_Gram_2018.md)
 * [LG Gram 2018 in Windows](RESULTS/Win10_LG_Gram_2018.md)
-* [Dell Latitude 3400](RESULTS/Ubuntu_Dell_Latitude_3400)
+* [Dell Latitude 3400](RESULTS/Ubuntu_Dell_Latitude_3400.md)
+* [Macbook pro 13 mid 2012](RESULTS/Macbook_pro_13_mid_2012.md)
