@@ -143,3 +143,9 @@ Sat Jul 17 22:18:01 -03 2021
 First, I would like to point out in the first place that the node and PHP binaries are installed in different storages. May it cause different results in performance? I don't know.
 
 The time utility from mac OS, unfortunately, cuts a decimal place for precision if compared to Linux.
+
+For **node**, there are a big difference between the *user* and *system* time. In five tests, we got between 0.05 and 0.06 as *user time*, and 0.01 in four, while 0.02 in just one of the tests for *system time*.
+
+For **php**, in all five tests runned consistently the time mac os utility give 0.02 seconds both for *user time* and *system time*.
+
+It seems that the PHP implementation for mac, for doing the same task as node, is more eficiently implemented in mac. The user processes seems to be
