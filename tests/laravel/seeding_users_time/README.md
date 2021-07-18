@@ -8,5 +8,10 @@ I propose to test the time and memory required to populate the users table for:
 * Populate with 10.000 users names
 * Populate with 100.000 users names
 * Populate with 1.000.000 users names
+* Same testes performed in different databases, as mysql, mariadb, postgree, sql server
 
 And finally, checks the size of the database in each situation.
+
+## Disclaimer
+
+Although this is setted as Laravel framework test, it is a test that is more sigficant to the database test itself than a Laravel. Albeit using Faker still means using a tiny layer of php processing and the package itself.
