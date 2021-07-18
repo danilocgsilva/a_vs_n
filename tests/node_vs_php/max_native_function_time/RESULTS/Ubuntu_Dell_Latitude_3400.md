@@ -172,3 +172,15 @@ user    0m0,033s
 sys     0m0,029s
 
 ```
+
+## Interpretations
+
+Summing the means time for *user time* and *system time* from node and PHP:
+
+Node:
+user    0m0,1084s
+sys     0m0,0186s
+
+PHP:
+user    0m0,0394s
+sys     0m0,0242s
