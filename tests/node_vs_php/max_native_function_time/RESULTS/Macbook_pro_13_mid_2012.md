@@ -37,7 +37,7 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 * Memory:
 ```
 Total of 16GB
-Free: 5,54GB
+Free: 5.54GB
 ```
 
 To get cpu information
@@ -148,4 +148,48 @@ For **node**, there are a big difference between the *user* and *system* time. I
 
 For **php**, in all five tests runned consistently the time mac os utility give 0.02 seconds both for *user time* and *system time*.
 
-It seems that the PHP implementation for mac, for doing the same task as node, is more eficiently implemented in mac. The user processes seems to be
+It seems that the PHP implementation for mac, for doing the same task as node, is more eficiently implemented in mac. The user processes seems to take almost three times more in node than the PHP, despite it tooks a litle more from system time. Thus, does the PHP implementations delegates more stuffs to the system than the node to make the same task? But the final total time is better in PHP. PHP is winner here.
+
+## Json for some *structured* data
+
+```json
+{
+    "description": "Test propposed by https://github.com/danilocgsilva/a_vs_n/blob/master/node_vs_php/max_native_function_time/README.md. \nThe test consists in testing the native max method of each tested language, that includes php and node. I give three numbers: 12, 16 and 72, and the method returns the higher between then. The intent is to test the performance in each language for each language.",
+    "author": {
+        "name": "Danilo Carlos de Góes Silva",
+        "email": "contact@danilocgsilva@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/danilocgsilva",
+        "stackoverflow": "https://stackoverflow.com/users/6083799/danilocgsilva",
+        "meetup": "https://www.meetup.com/pt-BR/members/143824372/"
+    },
+    "system_tested": {
+        "processor": {
+            "name": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+            "method": "command terminal: `sysctl machdep.cpu.brand_string`"
+        },
+        "memory": {
+            "total": "16GB",
+            "others": {
+                "Free memory when testing": "5.54GB"
+            },
+            "method": "Mac application: Activity Monitor"
+        },
+        "disks": 
+            [
+                {
+                    "name": "KINGSTON SA400S37480G",
+                    "method": "Goes to \"About This Mac\" menu and access \"System Report\". Them searches for \"storage\" section",
+                    "size": "479,76 GB (479.760.007.168 bytes)",
+                    "hosts": "PHP"
+                },
+                {
+                    "name": "LITEON LCH-256V2S",
+                    "method": "Goes to \"About This Mac\" menu and access \"System Report\". Them searches for \"storage\" section",
+                    "size": "255,72 GB (255.716.540.416 bytes)",
+                    "hosts": "node"
+                }
+            ]
+        }
+    }
+}
+```
