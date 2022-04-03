@@ -2,7 +2,7 @@
 
 This is an helper project that can help in several tests.
 
-This one have s simple duty: populate a database with users name. For example, there are methods here to make you easily populate a mysql database with tens of thousads users names to see the database load. This has been first created with the tests for time in fetching random people names from a database witi different database loads. You can check this project in link [mysql - few data load vs much data load](../../tests/mysql/fewDataLoad_vs_muchDataLoad/README.md).
+This one have s simple duty: populate a database with users name. For example, there are methods here to make you easily populate a mysql database with tens of thousads users names to see the database load. This has been first created with the tests for time in fetching random people names from a database with different database loads. You can check this project in link [mysql - few data load vs much data load](../../tests/mysql/fewDataLoad_vs_muchDataLoad/README.md).
 
 ## Prerequesites
 
