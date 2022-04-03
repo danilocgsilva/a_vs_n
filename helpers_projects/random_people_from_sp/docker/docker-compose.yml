@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  webserver:
+    build: 
+      context: ./bin/php8
+    container_name: '${COMPOSE_PROJECT_NAME}-api'
+    ports:
+      - "80:80"
+    links: 
+      - database
+    volumes: 
+      - ./../app:/var/www/app
+      - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini
+      - ${VHOSTS_DIR-./config/vhosts}:/etc/apache2/sites-enabled
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/app/public
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+  database:
+    build:
+      context: "./bin/mariadb106"
+    container_name: '${COMPOSE_PROJECT_NAME}-database'
+    ports:
+      - "127.0.0.1:${HOST_MACHINE_MYSQL_PORT}:3306"
+    volumes: 
+      - ./config/initdb:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
