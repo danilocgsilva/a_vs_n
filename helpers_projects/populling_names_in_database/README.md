@@ -6,14 +6,15 @@ This one have s simple duty: populate a database with users name. For example, t
 
 ## Prerequesites
 
-* have php installed
-* have a database available to you to connect and perform the database filling.
+* Have Docker and docker-compose line utility.
 
 ## Preparation for tests
 
 1. Go to the root project folder.
 2. Copy the `.env.example` to `.env` and fill in this file the database informations for connection.
-3. Execute in the command line: "`php composer.phar install`". wait for installation.
+3. Build the Docker container.
+4. Enters in Docker container through: `docker exec -it <your_cotainer_name> bash`.
+3. Execute in the command line: "`composer install`". wait for installation.
 4. Generate the users table typing in the command line: "`php artisan migrate`"
 
 ## Performing the tests
