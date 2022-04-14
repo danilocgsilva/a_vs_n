@@ -5,4 +5,4 @@ Compares performance from different technologies for same operations and registe
 ## File/folders list
 
 * `helpers_projects`: Projects that shoud be used indirectly by tests.
-* `tests`: The main folder, containing the documentation of results and procedures taken.
+* [`tests`](tests/README.md): The main folder, containing the documentation of results and procedures taken.

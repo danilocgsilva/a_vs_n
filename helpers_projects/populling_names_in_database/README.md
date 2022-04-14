@@ -21,7 +21,7 @@ This one have s simple duty: populate a database with users name. For example, t
 
 Be in the root project folder. All commands must be typed in this location.
 
-To fill the databas with 1000 names:
+To fill the database with 1000 names:
 
 `php artisan popule 1000`
 

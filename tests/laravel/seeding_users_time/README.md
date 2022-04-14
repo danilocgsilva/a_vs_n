@@ -8,9 +8,9 @@ I propose to test the time and memory required to populate the users table for:
 * Populate with 10.000 users names
 * Populate with 100.000 users names
 * Populate with 1.000.000 users names
-* Same testes performed in different databases, as mysql, mariadb, postgree, sql server
+* Same tests performed in different databases, as mysql, mariadb, postgree, sql server.
 
-And finally, checks the size of the database in each situation.
+And finally, checks the size of the database in each situation, both as storage and in backup file.
 
 ## Disclaimer
 

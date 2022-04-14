@@ -17,4 +17,3 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', HomeController::class);
 
-Route::get('/people', [PeopleController::class, 'index']);

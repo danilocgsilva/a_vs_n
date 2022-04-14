@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Person;
 
 class HomeController extends Controller
 {
     public function __invoke()
     {
         return view('home')->with([
-            'personCount' => 12
+            'personCount' => Person::count()
         ]);
     }
 }
