@@ -1,0 +1,15 @@
+{
+    "name": "danilocgsilva/php_vs_php",
+    "autoload": {
+        "psr-4": {
+            "Danilocgsilva\\PhpVsPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danilo Silva",
+            "email": "contact@danilocgsilva.me"
+        }
+    ],
+    "require": {}
+}
