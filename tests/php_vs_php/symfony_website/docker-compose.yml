@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 3104:80
+    container_name: symfony-website

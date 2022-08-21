@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 3105:80
+    container_name: symfony-skeleton

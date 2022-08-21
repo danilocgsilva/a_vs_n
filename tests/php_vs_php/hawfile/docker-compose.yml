@@ -5,6 +5,7 @@ services:
     build: 
       context: .
     ports:
-      - 80:80
+      - 3100:80
     volumes:
       - ./index.php:/var/www/html/index.php
+    container_name: 'haw_php'

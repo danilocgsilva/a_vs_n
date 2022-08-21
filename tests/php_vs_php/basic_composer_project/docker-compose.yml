@@ -5,4 +5,5 @@ services:
     build: 
       context: .
     ports:
-      - 80:80
+      - 3101:80
+    container_name: basic_composer
