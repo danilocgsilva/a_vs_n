@@ -14,5 +14,5 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return "Hi! This is a hello world printed in the Lumen.";
 });
