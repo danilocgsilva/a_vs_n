@@ -25,5 +25,26 @@ Check out each scenario:
 I will use the [Locust](https://locust.io/) in the most basic way, just to fetch basic statistics for each scenario. To use Locust and replicate the tests, just know that you need have Python installed (Locust is written in Python), and have Locust app installed. Then, just write a `locustfile.py`, go to the same folder, and write `locust --host=localhost:<PORT>`, replacing the suitable port. You may check each scenario folder and see the folders.
 I think that a good approach is to rise all environment at same time, and perform each test by time. May this avoid that some past environment alters subsequent test. The deal here is to compare each scenario in the same conditions, not to run stuffs in the most cleaner environment. More important is that each test runs in the most homogeneous environment.
 
-## Results
+The test consists in run Locust and check its statistics for each condition. The test will run for a while (around 25 seconds), and the basic statiscs will be recorded.
+
+## Tests and results
+
+### Intel Generation 11th test
+
+Here are some data about the tested system, getted by the `cat /proc/cpuinfo` Linux command:
+
+* Model name: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+* Cache size: 12288 KB
+
+Some memory data fetched by `sudo dmidecode --type memory`
+
+* Size: 16384 MB
+* Form Factor: SODIMM
+* Type: DDR4
+* Speed: 3200 MT/s
+* Manufacturer: 04CB000080AD
+* Configured Memory Speed: 3200 MT/s
+
+This data may worth to frame the results.
+
 
