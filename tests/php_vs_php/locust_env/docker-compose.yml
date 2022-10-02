@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  weblocust:
+    build:
+      context: .
+    container_name: locust_php_vs_php
+    network_mode: host
