@@ -17,3 +17,12 @@ Some memory data fetched by `sudo dmidecode --type memory`
 * Configured Memory Speed: 2400 MT/s
 
 This data may worth to frame the results.
+
+## Analysis
+
+It is important to note that theoretically Locust may trigger requests and responses using the max machine performance, 
+
+### Raw php
+
+The local setup could response
+
