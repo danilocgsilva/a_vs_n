@@ -120,8 +120,8 @@ table.stats tr.total td {
 
         <div class="info">
             
-            <p>During: <span class="l10n datetime">2022-10-03 22:40:49</span> - <span class="l10n datetime">2022-10-03 22:41:42</span></p>
-            <p>Target Host: <span>http://localhost:3105</span></p>
+            <p>During: <span class="l10n datetime">2022-10-02 15:38:38</span> - <span class="l10n datetime">2022-10-02 15:41:26</span></p>
+            <p>Target Host: <span>http://localhost:3102</span></p>
             <p>Script: <span>locustfile.py</span></p>
         </div>
 
@@ -147,26 +147,26 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/</td>
-                            <td>1348</td>
+                            <td>1570</td>
                             <td>0</td>
-                            <td>38</td>
-                            <td>31</td>
-                            <td>83</td>
-                            <td>32</td>
-                            <td>25.6</td>
+                            <td>106</td>
+                            <td>80</td>
+                            <td>367</td>
+                            <td>43</td>
+                            <td>9.3</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>1348</td>
+                            <td>1570</td>
                             <td>0</td>
-                            <td>38</td>
-                            <td>31</td>
-                            <td>83</td>
-                            <td>32</td>
-                            <td>25.6</td>
+                            <td>106</td>
+                            <td>80</td>
+                            <td>367</td>
+                            <td>43</td>
+                            <td>9.3</td>
                             <td>0.0</td>
                         </tr>
                     
@@ -196,27 +196,27 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/</td>
-                            <td>34</td>
-                            <td>34</td>
-                            <td>36</td>
-                            <td>42</td>
-                            <td>59</td>
-                            <td>63</td>
-                            <td>71</td>
-                            <td>84</td>
+                            <td>97</td>
+                            <td>100</td>
+                            <td>110</td>
+                            <td>120</td>
+                            <td>140</td>
+                            <td>150</td>
+                            <td>210</td>
+                            <td>370</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>34</td>
-                            <td>34</td>
-                            <td>36</td>
-                            <td>42</td>
-                            <td>59</td>
-                            <td>63</td>
-                            <td>71</td>
-                            <td>84</td>
+                            <td>97</td>
+                            <td>100</td>
+                            <td>110</td>
+                            <td>120</td>
+                            <td>140</td>
+                            <td>150</td>
+                            <td>210</td>
+                            <td>370</td>
                         </tr>
                     
                 </tbody>
@@ -241,9 +241,9 @@ table.stats tr.total td {
     </div>
 
     
+    <script src="./../jquery.js"></script>
+    <script src="./../echarts.js"></script>
     
-    <script src="./jquery.js"></script>
-    <script src="./echarts.js"></script>
     
     
     <script>
@@ -476,12 +476,12 @@ function fillTasksFromRequest() {
     <script>
         
 var stats_history = {
-    "time": ["22:40:50", "22:40:55", "22:41:00", "22:41:05", "22:41:10", "22:41:15", "22:41:20", "22:41:25", "22:41:30", "22:41:35", "22:41:40"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
-    "user_count": [{"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}],
-    "current_rps": [{"users": 1, "value": 0}, {"users": 1, "value": 23.75}, {"users": 1, "value": 24.444444444444443}, {"users": 1, "value": 25.6}, {"users": 1, "value": 25.9}, {"users": 1, "value": 26.1}, {"users": 1, "value": 26.0}, {"users": 1, "value": 25.8}, {"users": 1, "value": 25.3}, {"users": 1, "value": 25.6}, {"users": 1, "value": 25.8}],
-    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}],
-    "response_time_percentile_50": [{"users": 1, "value": 0}, {"users": 1, "value": 35}, {"users": 1, "value": 34}, {"users": 1, "value": 34}, {"users": 1, "value": 33}, {"users": 1, "value": 33}, {"users": 1, "value": 33}, {"users": 1, "value": 34}, {"users": 1, "value": 34}, {"users": 1, "value": 33}, {"users": 1, "value": 34}],
-    "response_time_percentile_95": [{"users": 1, "value": 0}, {"users": 1, "value": 57}, {"users": 1, "value": 60}, {"users": 1, "value": 61}, {"users": 1, "value": 63}, {"users": 1, "value": 63}, {"users": 1, "value": 63}, {"users": 1, "value": 64}, {"users": 1, "value": 64}, {"users": 1, "value": 65}, {"users": 1, "value": 67}],
+    "time": ["15:38:39", "15:38:44", "15:38:49", "15:38:54", "15:38:59", "15:39:04", "15:39:09", "15:39:14", "15:39:19", "15:39:24", "15:39:29", "15:39:34", "15:39:39", "15:39:44", "15:39:49", "15:39:54", "15:39:59", "15:40:04", "15:40:09", "15:40:14", "15:40:19", "15:40:24", "15:40:29", "15:40:34", "15:40:39", "15:40:44", "15:40:49", "15:40:54", "15:40:59", "15:41:04", "15:41:09", "15:41:14", "15:41:19", "15:41:24"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
+    "user_count": [{"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}],
+    "current_rps": [{"users": 1, "value": 0}, {"users": 1, "value": 9.75}, {"users": 1, "value": 10.333333333333334}, {"users": 1, "value": 9.6}, {"users": 1, "value": 8.7}, {"users": 1, "value": 9.8}, {"users": 1, "value": 8.9}, {"users": 1, "value": 8.5}, {"users": 1, "value": 8.6}, {"users": 1, "value": 7.8}, {"users": 1, "value": 8.6}, {"users": 1, "value": 9.6}, {"users": 1, "value": 10.2}, {"users": 1, "value": 10.2}, {"users": 1, "value": 10.3}, {"users": 1, "value": 10.2}, {"users": 1, "value": 9.6}, {"users": 1, "value": 8.6}, {"users": 1, "value": 8.5}, {"users": 1, "value": 8.2}, {"users": 1, "value": 7.4}, {"users": 1, "value": 8.0}, {"users": 1, "value": 8.0}, {"users": 1, "value": 7.2}, {"users": 1, "value": 8.5}, {"users": 1, "value": 10.0}, {"users": 1, "value": 10.2}, {"users": 1, "value": 10.2}, {"users": 1, "value": 10.1}, {"users": 1, "value": 10.3}, {"users": 1, "value": 10.3}, {"users": 1, "value": 10.4}, {"users": 1, "value": 10.3}, {"users": 1, "value": 10.2}],
+    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}],
+    "response_time_percentile_50": [{"users": 1, "value": 0}, {"users": 1, "value": 90}, {"users": 1, "value": 92}, {"users": 1, "value": 110.0}, {"users": 1, "value": 100.0}, {"users": 1, "value": 95}, {"users": 1, "value": 100.0}, {"users": 1, "value": 110.0}, {"users": 1, "value": 120.0}, {"users": 1, "value": 100.0}, {"users": 1, "value": 92}, {"users": 1, "value": 93}, {"users": 1, "value": 92}, {"users": 1, "value": 89}, {"users": 1, "value": 89}, {"users": 1, "value": 91}, {"users": 1, "value": 96}, {"users": 1, "value": 120.0}, {"users": 1, "value": 110.0}, {"users": 1, "value": 120.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 120.0}, {"users": 1, "value": 120.0}, {"users": 1, "value": 120.0}, {"users": 1, "value": 94}, {"users": 1, "value": 92}, {"users": 1, "value": 91}, {"users": 1, "value": 93}, {"users": 1, "value": 91}, {"users": 1, "value": 90}, {"users": 1, "value": 91}, {"users": 1, "value": 89}, {"users": 1, "value": 91}, {"users": 1, "value": 91}],
+    "response_time_percentile_95": [{"users": 1, "value": 0}, {"users": 1, "value": 100.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 170.0}, {"users": 1, "value": 170.0}, {"users": 1, "value": 150.0}, {"users": 1, "value": 190.0}, {"users": 1, "value": 180.0}, {"users": 1, "value": 250.0}, {"users": 1, "value": 210.0}, {"users": 1, "value": 140.0}, {"users": 1, "value": 140.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 190.0}, {"users": 1, "value": 200.0}, {"users": 1, "value": 150.0}, {"users": 1, "value": 190.0}, {"users": 1, "value": 190.0}, {"users": 1, "value": 170.0}, {"users": 1, "value": 170.0}, {"users": 1, "value": 210.0}, {"users": 1, "value": 180.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 120.0}, {"users": 1, "value": 120.0}, {"users": 1, "value": 130.0}, {"users": 1, "value": 120.0}],
     "markers": [],
 };
         var rpsChart = new LocustLineChart($(".charts-container"), "Total Requests per Second", ["RPS", "Failures/s"], "reqs/s", ['#00ca5a', '#ff6d6d']);

@@ -120,8 +120,8 @@ table.stats tr.total td {
 
         <div class="info">
             
-            <p>During: <span class="l10n datetime">2022-10-03 11:22:48</span> - <span class="l10n datetime">2022-10-03 11:23:58</span></p>
-            <p>Target Host: <span>http://localhost:3104</span></p>
+            <p>During: <span class="l10n datetime">2022-10-02 15:31:20</span> - <span class="l10n datetime">2022-10-02 15:32:06</span></p>
+            <p>Target Host: <span>http://localhost:3101</span></p>
             <p>Script: <span>locustfile.py</span></p>
         </div>
 
@@ -147,26 +147,26 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/</td>
-                            <td>388</td>
+                            <td>15447</td>
                             <td>0</td>
-                            <td>178</td>
-                            <td>132</td>
-                            <td>335</td>
-                            <td>40</td>
-                            <td>5.6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>43</td>
+                            <td>339.7</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>388</td>
+                            <td>15447</td>
                             <td>0</td>
-                            <td>178</td>
-                            <td>132</td>
-                            <td>335</td>
-                            <td>40</td>
-                            <td>5.6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>43</td>
+                            <td>339.7</td>
                             <td>0.0</td>
                         </tr>
                     
@@ -196,32 +196,36 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/</td>
-                            <td>160</td>
-                            <td>170</td>
-                            <td>180</td>
-                            <td>230</td>
-                            <td>250</td>
-                            <td>260</td>
-                            <td>300</td>
-                            <td>340</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>9</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>160</td>
-                            <td>170</td>
-                            <td>180</td>
-                            <td>230</td>
-                            <td>250</td>
-                            <td>260</td>
-                            <td>300</td>
-                            <td>340</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>9</td>
                         </tr>
                     
                 </tbody>
             </table>
         </div>
+
+        
+
+        
 
         
             <div class="charts-container">
@@ -237,11 +241,13 @@ table.stats tr.total td {
     </div>
 
     
-    <script src="./jquery.js"></script>
-    <script src="./echarts.js"></script>
+    
+    <script src="./../jquery.js"></script>
+    <script src="./../echarts.js"></script>
     
     
     <script>
+
 
 // vintage.js
 (function (root, factory) {
@@ -470,12 +476,12 @@ function fillTasksFromRequest() {
     <script>
         
 var stats_history = {
-    "time": ["11:22:49", "11:22:54", "11:22:59", "11:23:04", "11:23:09", "11:23:14", "11:23:19", "11:23:24", "11:23:29", "11:23:34", "11:23:39", "11:23:44", "11:23:49", "11:23:54"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
-    "user_count": [{"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}],
-    "current_rps": [{"users": 1, "value": 0}, {"users": 1, "value": 4.5}, {"users": 1, "value": 4.888888888888889}, {"users": 1, "value": 4.9}, {"users": 1, "value": 5.2}, {"users": 1, "value": 5.9}, {"users": 1, "value": 6.0}, {"users": 1, "value": 5.9}, {"users": 1, "value": 5.8}, {"users": 1, "value": 5.7}, {"users": 1, "value": 5.8}, {"users": 1, "value": 5.7}, {"users": 1, "value": 5.6}, {"users": 1, "value": 5.7}],
-    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}],
-    "response_time_percentile_50": [{"users": 1, "value": 0}, {"users": 1, "value": 150.0}, {"users": 1, "value": 190.0}, {"users": 1, "value": 200.0}, {"users": 1, "value": 160.0}, {"users": 1, "value": 150.0}, {"users": 1, "value": 150.0}, {"users": 1, "value": 160.0}, {"users": 1, "value": 160.0}, {"users": 1, "value": 160.0}, {"users": 1, "value": 150.0}, {"users": 1, "value": 160.0}, {"users": 1, "value": 160.0}, {"users": 1, "value": 160.0}],
-    "response_time_percentile_95": [{"users": 1, "value": 0}, {"users": 1, "value": 240.0}, {"users": 1, "value": 290.0}, {"users": 1, "value": 300.0}, {"users": 1, "value": 260.0}, {"users": 1, "value": 240.0}, {"users": 1, "value": 240.0}, {"users": 1, "value": 250.0}, {"users": 1, "value": 260.0}, {"users": 1, "value": 260.0}, {"users": 1, "value": 260.0}, {"users": 1, "value": 260.0}, {"users": 1, "value": 260.0}, {"users": 1, "value": 260.0}],
+    "time": ["15:31:25", "15:31:30", "15:31:35", "15:31:40", "15:31:45", "15:31:50", "15:31:55", "15:32:00", "15:32:05"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
+    "user_count": [{"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}],
+    "current_rps": [{"users": 1, "value": 238.0}, {"users": 1, "value": 308.25}, {"users": 1, "value": 347.3}, {"users": 1, "value": 349.6}, {"users": 1, "value": 350.1}, {"users": 1, "value": 345.9}, {"users": 1, "value": 347.0}, {"users": 1, "value": 331.0}, {"users": 1, "value": 317.3}],
+    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}],
+    "response_time_percentile_50": [{"users": 1, "value": 3}, {"users": 1, "value": 3}, {"users": 1, "value": 3}, {"users": 1, "value": 3}, {"users": 1, "value": 3}, {"users": 1, "value": 3}, {"users": 1, "value": 3}, {"users": 1, "value": 3}, {"users": 1, "value": 3}],
+    "response_time_percentile_95": [{"users": 1, "value": 3}, {"users": 1, "value": 4}, {"users": 1, "value": 4}, {"users": 1, "value": 4}, {"users": 1, "value": 4}, {"users": 1, "value": 4}, {"users": 1, "value": 4}, {"users": 1, "value": 4}, {"users": 1, "value": 4}],
     "markers": [],
 };
         var rpsChart = new LocustLineChart($(".charts-container"), "Total Requests per Second", ["RPS", "Failures/s"], "reqs/s", ['#00ca5a', '#ff6d6d']);

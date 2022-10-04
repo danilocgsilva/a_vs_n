@@ -120,8 +120,8 @@ table.stats tr.total td {
 
         <div class="info">
             
-            <p>During: <span class="l10n datetime">2022-10-03 10:53:38</span> - <span class="l10n datetime">2022-10-03 10:54:49</span></p>
-            <p>Target Host: <span>http://localhost:3103</span></p>
+            <p>During: <span class="l10n datetime">2022-10-03 22:50:14</span> - <span class="l10n datetime">2022-10-03 22:51:02</span></p>
+            <p>Target Host: <span>http://localhost:3106</span></p>
             <p>Script: <span>locustfile.py</span></p>
         </div>
 
@@ -147,26 +147,26 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/</td>
-                            <td>2760</td>
+                            <td>2353</td>
                             <td>0</td>
-                            <td>25</td>
                             <td>20</td>
-                            <td>51</td>
+                            <td>15</td>
                             <td>47</td>
-                            <td>38.4</td>
+                            <td>43</td>
+                            <td>49.5</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>2760</td>
+                            <td>2353</td>
                             <td>0</td>
-                            <td>25</td>
                             <td>20</td>
-                            <td>51</td>
+                            <td>15</td>
                             <td>47</td>
-                            <td>38.4</td>
+                            <td>43</td>
+                            <td>49.5</td>
                             <td>0.0</td>
                         </tr>
                     
@@ -196,27 +196,27 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/</td>
-                            <td>23</td>
+                            <td>18</td>
+                            <td>18</td>
+                            <td>19</td>
                             <td>24</td>
-                            <td>25</td>
+                            <td>29</td>
                             <td>31</td>
                             <td>36</td>
-                            <td>38</td>
-                            <td>43</td>
-                            <td>51</td>
+                            <td>48</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>23</td>
+                            <td>18</td>
+                            <td>18</td>
+                            <td>19</td>
                             <td>24</td>
-                            <td>25</td>
+                            <td>29</td>
                             <td>31</td>
                             <td>36</td>
-                            <td>38</td>
-                            <td>43</td>
-                            <td>51</td>
+                            <td>48</td>
                         </tr>
                     
                 </tbody>
@@ -241,16 +241,14 @@ table.stats tr.total td {
     </div>
 
     
-        
-    <script src="./jquery.js"></script>
-    <script src="./echarts.js"></script>
     
-    
+    <script src="./../jquery.js"></script>
+    <script src="./../echarts.js"></script>
     
     
     <script>
 
-        
+
 // vintage.js
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -478,12 +476,12 @@ function fillTasksFromRequest() {
     <script>
         
 var stats_history = {
-    "time": ["10:53:39", "10:53:44", "10:53:49", "10:53:54", "10:53:59", "10:54:04", "10:54:09", "10:54:14", "10:54:19", "10:54:24", "10:54:29", "10:54:34", "10:54:39", "10:54:44", "10:54:49"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
-    "user_count": [{"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}],
-    "current_rps": [{"users": 1, "value": 0}, {"users": 1, "value": 39.0}, {"users": 1, "value": 37.77777777777778}, {"users": 1, "value": 38.3}, {"users": 1, "value": 39.3}, {"users": 1, "value": 39.3}, {"users": 1, "value": 38.8}, {"users": 1, "value": 38.5}, {"users": 1, "value": 39.1}, {"users": 1, "value": 38.3}, {"users": 1, "value": 38.6}, {"users": 1, "value": 38.6}, {"users": 1, "value": 38.6}, {"users": 1, "value": 38.5}, {"users": 1, "value": 38.4}],
-    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}],
-    "response_time_percentile_50": [{"users": 1, "value": 0}, {"users": 1, "value": 26}, {"users": 1, "value": 24}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}, {"users": 1, "value": 23}],
-    "response_time_percentile_95": [{"users": 1, "value": 0}, {"users": 1, "value": 37}, {"users": 1, "value": 37}, {"users": 1, "value": 36}, {"users": 1, "value": 36}, {"users": 1, "value": 36}, {"users": 1, "value": 37}, {"users": 1, "value": 37}, {"users": 1, "value": 38}, {"users": 1, "value": 38}, {"users": 1, "value": 39}, {"users": 1, "value": 38}, {"users": 1, "value": 38}, {"users": 1, "value": 39}, {"users": 1, "value": 40}],
+    "time": ["22:50:17", "22:50:22", "22:50:27", "22:50:32", "22:50:37", "22:50:42", "22:50:47", "22:50:52", "22:50:57"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
+    "user_count": [{"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}],
+    "current_rps": [{"users": 1, "value": 11.0}, {"users": 1, "value": 46.166666666666664}, {"users": 1, "value": 51.5}, {"users": 1, "value": 51.3}, {"users": 1, "value": 51.1}, {"users": 1, "value": 49.5}, {"users": 1, "value": 48.7}, {"users": 1, "value": 48.3}, {"users": 1, "value": 49.5}],
+    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}],
+    "response_time_percentile_50": [{"users": 1, "value": 17}, {"users": 1, "value": 17}, {"users": 1, "value": 17}, {"users": 1, "value": 17}, {"users": 1, "value": 18}, {"users": 1, "value": 18}, {"users": 1, "value": 19}, {"users": 1, "value": 18}, {"users": 1, "value": 18}],
+    "response_time_percentile_95": [{"users": 1, "value": 29}, {"users": 1, "value": 30}, {"users": 1, "value": 30}, {"users": 1, "value": 30}, {"users": 1, "value": 31}, {"users": 1, "value": 31}, {"users": 1, "value": 32}, {"users": 1, "value": 31}, {"users": 1, "value": 31}],
     "markers": [],
 };
         var rpsChart = new LocustLineChart($(".charts-container"), "Total Requests per Second", ["RPS", "Failures/s"], "reqs/s", ['#00ca5a', '#ff6d6d']);

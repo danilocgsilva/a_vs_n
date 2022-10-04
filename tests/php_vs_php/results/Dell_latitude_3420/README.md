@@ -1,4 +1,4 @@
-# Intel Generation 11th test
+# Dell Latitude 3420
 
 Here are some data about the tested system, getted by the `cat /proc/cpuinfo` Linux command:
 
