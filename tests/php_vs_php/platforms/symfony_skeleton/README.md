@@ -1,3 +1,3 @@
 # Symfony skeleton
 
-More suitable for tinier framework, but still using the wonders of Symfony.
+A Symfony with the most basic structure to starts from.

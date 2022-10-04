@@ -42,7 +42,7 @@ The test consists in run Locust and check its statistics for each framework. The
 
 ## Tests and results
 
-* [LG Gram 2018 with Fedora 36](results/LG_GRAM_2018/README.md)
+* [LG Gram 2018 with Fedora 36](results/LG_Gram_2018/README.md)
 * [Dell](results/Dell.md)
 
 
