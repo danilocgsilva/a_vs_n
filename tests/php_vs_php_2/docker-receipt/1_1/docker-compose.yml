@@ -4,13 +4,11 @@ services:
       context: env0
     ports:
       - 1580:80
-  php0:
+  nginx:
     build:
-      context: php0
+      context: nginx
     ports:
-      - "1581:8000"
-    expose:
-      - "8000"
+      - 1581:80
   php_apache:
     build:
       context: php_apache
