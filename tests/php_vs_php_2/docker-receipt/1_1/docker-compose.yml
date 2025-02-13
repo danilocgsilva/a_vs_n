@@ -1,0 +1,19 @@
+services:
+  apache:
+    build:
+      context: env0
+    ports:
+      - 1580:80
+  php0:
+    build:
+      context: php0
+    ports:
+      - "1581:8000"
+    expose:
+      - "8000"
+  php_apache:
+    build:
+      context: php_apache
+    ports:
+      - 1582:80
+
