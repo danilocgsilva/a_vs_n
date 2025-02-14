@@ -35,15 +35,37 @@ services:
     container_name: a_vs_n_nginx_php_fpm
     build:
       context: php_nginx
-    # ports:
-    #   - "9000:9000"
   nginx_php:
     container_name: a_vs_n_nginx_php
     build:
       context: php_nginx/nginx
     ports:
       - 1583:80
-    #   - "443:443"
     links:
       - nginx_php_fpm
+  apache_full_html:
+    container_name: a_vs_n_apache_full_html
+    build:
+      context: apache_full_html
+    ports:
+      - 1584:80
+  built_in_server:
+    container_name: a_vs_n_built_in_server
+    build:
+      context: php_built_in_server
+    ports:
+      - 1585:8000
+  nginx_php_rp_debianbase:
+    container_name: a_vs_n_nginx_php_rp_debianbase_nginx
+    build:
+      context: php_nginx_rp_debianbase/nginx
+    ports:
+      - 1586:80
+    links:
+      - nginx_php_rp_debianbase_fpm
+  nginx_php_rp_debianbase_fpm:
+    container_name: a_vs_n_nginx_php_rp_debianbase_fpm
+    build:
+      context: php_nginx_rp_debianbase/fpm
+    
 
