@@ -14,4 +14,16 @@ services:
       context: php_apache
     ports:
       - 1582:80
+  locust_master:
+    image: locustio/locust:2.32.9
+    volumes:
+      - ./locust/:/mnt/locust
+    command: -f /mnt/locust/locustfile.py --master
+    ports:
+      - 8089:8089
+  locust_worker:
+    image: locustio/locust:2.32.9
+    volumes:
+      - ./locust/:/mnt/locust
+    command: -f /mnt/locust/locustfile.py --worker --master-host locust_master
 
