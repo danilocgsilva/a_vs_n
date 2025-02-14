@@ -16,7 +16,7 @@ services:
   apache:
     container_name: a_vs_n_apache
     build:
-      context: env0
+      context: apache
     ports:
       - 1580:80
   nginx:
