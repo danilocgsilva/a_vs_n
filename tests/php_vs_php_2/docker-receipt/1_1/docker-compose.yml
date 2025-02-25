@@ -55,8 +55,4 @@ services:
       context: php_built_in_server
     ports:
       - 1585:8000
-  expose:
-    - "9000"
-
-    
 
