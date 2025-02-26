@@ -62,3 +62,10 @@ Does it using the PHP built in server have a much different performance?
 * Check result in browser: `http://localhost:1585`
 * Internal Docker DNS (which must be used in Locust as a URL): `http://built_in_server`
 * Uses only the `built_in_server` service in the `docker-compose.yml` file.
+---
+### PHP, Apache, served by composer application
+Include composer.php and serves data from PHP class using Apache.
+* Available on local host by port 1586.
+* Check result in browser: `http://localhost:1586`
+* Internal Docker DNS (which must be used in Locust as a URL): `http://apache_composer`
+* Uses only the `apache_composer` service in the `docker-compose.yml` file.

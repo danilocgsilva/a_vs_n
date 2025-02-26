@@ -1,0 +1,16 @@
+{
+    "name": "a_vs_n/apache_composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AVsN\\ApacheComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danilo Silva",
+            "email": "contact@danilocgsilva.me"
+        }
+    ],
+    "require": {}
+}

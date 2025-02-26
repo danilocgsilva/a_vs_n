@@ -8,7 +8,7 @@ services:
     ports:
       - 8089:8089
   locust_worker:
-    container_name: a_vs_n_locust_worker
+    # container_name: a_vs_n_locust_worker
     image: locustio/locust:2.32.9
     volumes:
       - ./locust/:/mnt/locust
@@ -55,4 +55,11 @@ services:
       context: php_built_in_server
     ports:
       - 1585:8000
-
+  apache_composer:
+    container_name: a_vs_n_apache_composer
+    build:
+      context: apache_composer
+    ports:
+      - 1586:80
+    volumes:
+      - './apache_composer/www:/var/www'
