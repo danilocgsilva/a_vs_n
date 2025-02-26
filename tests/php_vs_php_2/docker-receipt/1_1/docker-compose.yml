@@ -63,3 +63,18 @@ services:
       - 1586:80
     volumes:
       - './apache_composer/www:/var/www'
+  nginx_composer:
+    container_name: a_vs_n_nginx_composer
+    build:
+      context: nginx_composer/nginx_rp
+    ports:
+      - 1587:80
+    links:
+      - nginx_composer_fpm
+  nginx_composer_fpm:
+    container_name: a_vs_n_nginx_composer_fpm
+    build:
+      context: nginx_composer/php_fpm
+    volumes:
+      - './nginx_composer/www:/var/www'
+

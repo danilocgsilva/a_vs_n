@@ -1,0 +1,2 @@
+tests/php_vs_php_2/docker-receipt/1_1/nginx_composer/www/composer.lock
+tests/php_vs_php_2/docker-receipt/1_1/locust/__pycache__/locustfile.cpython-312.pyc
