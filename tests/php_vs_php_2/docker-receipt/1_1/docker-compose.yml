@@ -77,4 +77,35 @@ services:
       context: nginx_composer/php_fpm
     volumes:
       - './nginx_composer/www:/var/www'
+  # symfony_nginx_fpm:
+  #   container_name: a_vs_n_symfony_nginx_fpm
+  #   build:
+  #     context: symfony_nginx/fpm
+  # symfony_nginx_webserver:
+  #   container_name: a_vs_n_symfony_nginx_webserver
+  #   build:
+  #     context: symfony_nginx/nginx
+  #   ports:
+  #     - 1588:80
+  #   links:
+  #     - symfony_nginx_fpm
+  #   volumes:
+  #     - './symfony_nginx/nginx/html:/usr/share/nginx/html'
 
+  symfony_nginx_fpm:
+    build:
+      context: symfony_nginx/fpm
+    container_name: a_vs_n_symfony_nginx_fpm
+    volumes:
+      - ./symfony_nginx/webserver/app:/var/www/html/
+
+  symfony_nginx_webserver:
+    build:
+      context: symfony_nginx/webserver
+    container_name: a_vs_n_symfony_nginx_webserver
+    ports:
+      - "1588:80"
+    volumes:
+      - ./symfony_nginx/webserver/app:/var/www/html/
+    depends_on:
+      - symfony_nginx_fpm
